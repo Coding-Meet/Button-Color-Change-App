@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // here setKeepOnScreenCondition true so, activity redirect another activity
+        // here setKeepOnScreenCondition false so, activity redirect another activity
         // and some api call here
-        // if setKeepOnScreenCondition false so, activity code not redirect another activity
+        // if setKeepOnScreenCondition true so, activity code not redirect another activity
         splashScreen.setKeepOnScreenCondition { false }
 //        Handler(Looper.getMainLooper()).postDelayed({
 //            startActivity(Intent(this, SecondActivity::class.java))
